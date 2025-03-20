@@ -2,19 +2,20 @@ class Lcm
 {
 	public static void main(String[] args) 
 	{
-		int n1 = 11;
-		int n2 = 7;
-		int i = 1;
-		int max = n1 > n2 ? n1 : n2;
+		int a = 36;
+		int b = 60;
+
+		int max = a > b ? a : b;
 
 		while (true)
 		{
-			if ((max * i) % n1 == 0 && (max * i) % n2 == 0)
+			if (max % a == 0 && max % b == 0)
 			{
-				System.out.print(max * i);
+				System.out.println(max);
 				break;
 			}
-			i++;
+			max++;
 		}
+		//System.out.println("Hello World!");
 	}
 }
